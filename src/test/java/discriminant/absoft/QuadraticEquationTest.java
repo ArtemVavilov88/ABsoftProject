@@ -49,7 +49,7 @@ public class QuadraticEquationTest {
         int b = 3;
         int c = 7;
         Assert.assertTrue(QuadraticEquation.solveQuadraticEquation(a, b, c) == null,
-                "The discriminant of quadratic equation roots < 0, this equation has no roots");
+                "Function tried to calculate roots for equation where D < 0");
     }
 
     /**
@@ -62,6 +62,6 @@ public class QuadraticEquationTest {
         int b = 3;
         int c = 7;
         Assert.assertTrue(QuadraticEquation.solveQuadraticEquation(a, b, c) == null,
-                "a = 0, this equation is linear");
+                "Function tried to calculate roots for equation where a = 0");
     }
 }
