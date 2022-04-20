@@ -16,7 +16,6 @@ public class QuadraticEquation {
             ArrayList<Double> actualSquareRoots = new ArrayList<>();
             actualSquareRoots.add(x1);
             actualSquareRoots.add(x2);
-            System.out.println(discriminant);
             System.out.println("Square roots X1 and X2 = " + actualSquareRoots);
             return actualSquareRoots;
             }
@@ -24,7 +23,7 @@ public class QuadraticEquation {
             System.out.println("a = 0, this equation is linear");
             return null;
         } else {
-            System.out.println("Discriminant les then 0 or a = 0");
+            System.out.println("Discriminant less then 0");
             return null;
         }
     }
